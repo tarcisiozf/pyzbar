@@ -70,7 +70,7 @@ class ZBarConfig(IntEnum):
     CFG_ADD_CHECK = 1       # /**< enable check digit when optional */
     CFG_EMIT_CHECK = 2      # /**< return check digit when present */
     CFG_ASCII = 3           # /**< enable full ASCII character set */
-    CFG_NUM = 4             # /**< number of boolean decoder configs */
+    CFG_BINARY = 4           # /**< don't convert binary data to text */
 
     CFG_MIN_LEN = 0x20      # /**< minimum data length for valid decode */
     CFG_MAX_LEN = 0x21      # /**< maximum data length for valid decode */

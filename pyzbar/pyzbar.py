@@ -208,6 +208,9 @@ def decode(image, symbols=None):
 
     results = []
     with _image_scanner() as scanner:
+        zbar_image_scanner_set_config(
+            scanner, ZBarSymbol.QRCODE, ZBarConfig.CFG_BINARY, 1
+        )
         if symbols:
             # Disable all but the symbols of interest
             disable = set(ZBarSymbol).difference(symbols)
